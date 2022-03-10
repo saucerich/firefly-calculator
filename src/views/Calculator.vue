@@ -1,6 +1,6 @@
 <template>
   <div v-bind:class="{ 'purple': this.purple, 'green': this.green, 'blue': this.blue }">
-    <div class="landscapemain">
+    <div class="">
     <HamburgerMenu
     v-bind:lastCalc="this.lastCalc"
     v-bind:secondCalc="this.secondCalc"
@@ -34,7 +34,7 @@ import CalculatorOutput from '@/components/CalculatorOutput.vue'
 import CalculatorButtons from '@/components/CalculatorButtons.vue'
 
 export default {
-  name: 'Calculator',
+  name: 'Calculator-r',
   components: {
     HamburgerMenu,
     CalculatorOutput,

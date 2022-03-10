@@ -1,6 +1,6 @@
 <template>
   <div class='buttons' v-bind:class="{ 'purple': this.purple, 'green': this.green, 'blue': this.blue }">
-    <b-container class="portrait hidden">
+    <b-container class="portrait">
       <b-row class="gx-1">
         <b-col cols=3><b-button pill variant="outline-warning" v-on:click="clear()" class="circle">C</b-button></b-col>
         <b-col offset=3 cols=3><b-button pill variant="warning" v-on:click="operation('÷')" class="circle">÷</b-button></b-col>
@@ -35,7 +35,7 @@
         </b-col>
       </b-row>
     </b-container>
-    <b-container class="landscape">
+    <b-container class="landscape hidden">
       <b-row class="gx-1">
         <b-col cols=10>
           <b-row class="gx-1">

@@ -1,6 +1,6 @@
 <template>
   <div v-bind:class="{ 'purple': this.purple, 'green': this.green, 'blue': this.blue }">
-      <div class='output landscape'>
+      <div class='output'>
         <h2 class='output-text'> {{this.displayText}} </h2>
       </div>
   </div>

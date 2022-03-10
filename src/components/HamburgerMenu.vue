@@ -1,6 +1,6 @@
 <template>
   <div class='main'>
-    <b-dropdown block variant="outline-light" v-bind:class="{ 'purple-top': this.purple, 'green-top': this.green, 'blue-top': this.blue }" class="hidden">
+    <b-dropdown block variant="outline-light" v-bind:class="{ 'purple-top': this.purple, 'green-top': this.green, 'blue-top': this.blue }" class="">
           <template #button-content>
                 <b-icon icon="list" aria-hidden="true">Dropdown</b-icon>
         </template>
@@ -34,7 +34,7 @@
             </b-dropdown-item-button>
         </b-dropdown-group>
     </b-dropdown>
-    <div class="landscape-ham">
+    <div class="landscape-ham hidden">
         <div class="landscape-prev">
             <h3 class="l-header" style="color:white; font-size:17px;">{{this.thirdCalc}}</h3>
             <h3 class="l-header" style="color:white; font-size:17px;">{{this.secondCalc}}</h3>
@@ -60,28 +60,28 @@ export default {
   props: {
     lastCalc: {
       type: String,
-      default: "0"
+      default: '0'
     },
     thirdCalc: {
       type: String,
-      default: "0"
+      default: '0'
     },
     secondCalc: {
       type: String,
-      default: "0"
+      default: '0'
     },
     purple: {
       type: Boolean,
-      default: true,
+      default: true
     },
     green: {
       type: Boolean,
-      default: false,
+      default: false
     },
     blue: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
 
   methods: {
@@ -115,23 +115,4 @@ export default {
     display:none;
 }
 
-.l-header {
-    font: white;
-}
-.landscape-ham {
-    display:flex;
-    flex-direction: column;
-    width: 200px;
-}
-
-.landscape {
-    display:flex;
-    flex-direction: column;
-}
-
-.landscape-prev {
-    display:flex;
-    flex-direction: column;
-    height:110px;
-}
 </style>
