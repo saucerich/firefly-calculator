@@ -60,28 +60,28 @@ export default {
   props: {
     lastCalc: {
       type: String,
-      default: "0"
+      default: '0'
     },
     thirdCalc: {
       type: String,
-      default: "0"
+      default: '0'
     },
     secondCalc: {
       type: String,
-      default: "0"
+      default: '0'
     },
     purple: {
       type: Boolean,
-      default: true,
+      default: true
     },
     green: {
       type: Boolean,
-      default: false,
+      default: false
     },
     blue: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
 
   methods: {

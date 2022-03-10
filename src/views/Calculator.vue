@@ -34,7 +34,7 @@ import CalculatorOutput from '@/components/CalculatorOutput.vue'
 import CalculatorButtons from '@/components/CalculatorButtons.vue'
 
 export default {
-  name: 'Calculator',
+  name: 'Calculator-r',
   components: {
     HamburgerMenu,
     CalculatorOutput,
