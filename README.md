@@ -33,5 +33,5 @@
 
 1. Open the terminal by selecting ```Terminal>New Terminal``` from the tool bar
 
-2. Enter: ```npm run serve``` into the terminal
+2. Enter: ```npm install``` followed by ```npm run serve``` into the terminal to start the development server
 

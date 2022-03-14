@@ -64,7 +64,6 @@ export default {
      * FUNCTIONALITY: evaluate() was already written by instructors.
      */
     evaluate () {
-      console.log("--EVAULATING--")
       try {
         /* WARNING! Never use eval in production code. */
         // eslint-disable-next-line no-eval
@@ -82,9 +81,6 @@ export default {
       } catch (exception) {
         this.clear()
       }
-      console.log("containsOp (eval): "+this.containsOp)
-      console.log("display (eval): "+this.displayText+" "+typeof this.displayText)
-      console.log("formula (eval): "+this.formula+" "+typeof this.formula)
     },
     /*
      * FUNCTION: isOp()
@@ -124,7 +120,7 @@ export default {
      */
     append (value) {
       console.log("LENGTH: "+this.displayText.length)
-      if (this.displayText.length>7){
+      if (this.displayText.length >5){
         return
       }
       if (this.containsOp && this.isOp(value)) {
@@ -153,9 +149,6 @@ export default {
         this.displayText=this.displayText+value
         this.formula=this.formula+this.formulize(value)
       }
-      console.log("display: "+this.displayText+" "+typeof this.displayText)
-      console.log("formula: "+this.formula+" "+typeof this.formula)
-      console.log("containsOp: "+this.containsOp)
 
     },
 
@@ -168,7 +161,6 @@ export default {
       this.displayText = "0"
       this.formula = ""
       this.containsOp = false
-      console.log("---CLEAR---")
     },
 
     /*
@@ -204,12 +196,10 @@ export default {
       */
       themeChange (theme) {
         if (theme==="green") {
-          console.log(theme)
           this.green=true
           this.blue = false
           this.purple= false
         } if (theme==="blue") {
-          console.log(theme)
           this.green=false
           this.blue = true
           this.purple= false
